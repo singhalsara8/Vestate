@@ -11,7 +11,7 @@
         android:id="@+id/loginlogo"
         android:layout_width="match_parent"
         android:layout_height="272.5dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         android:adjustViewBounds="true"
         android:src="@drawable/vector29"/>
 

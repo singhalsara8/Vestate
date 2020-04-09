@@ -17,6 +17,7 @@ import java.util.Objects;
 
 public class LoginFragment extends Fragment {
     View view;
+    private MainActivity mainActivity;
     private LinearLayout linearLayout;
     private NavController navController;
 
@@ -25,6 +26,8 @@ public class LoginFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_login, container, false);
+        mainActivity = (MainActivity)getActivity();
+        mainActivity.getSupportActionBar().hide();
         linearLayout = view.findViewById(R.id.login_signup);
         navController = Navigation.findNavController(getActivity(), R.id.my_nav_host_fragment);
 
