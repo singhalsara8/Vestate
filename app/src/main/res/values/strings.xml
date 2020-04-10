@@ -13,6 +13,24 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="already_have_an_account">Already have an account?</string>
     <string name="log_in">LOG IN</string>
+    <string name="demo_address">78 /a, Maker Arcade, G.d.somani Marg, Nr Wtc., Cuffe Parade,Mumbai</string>
+    <string name="irr">IRR</string>
+    <string name="price_share">Price/Share</string>
+    <string name="rental_yield">Rental Yield</string>
+    <string name="property_type">Property Type</string>
+    <string name="commercial">Commercial</string>
+    <string name="residential">Residential</string>
+    <string name="retail">Retail</string>
+    <string name="_1_3">1% - 3%</string>
+    <string name="_3_5">3% - 5%</string>
+    <string name="_5_8">5% - 8%</string>
+    <string name="above_8">Above 8%</string>
+    <string name="rating">Rating</string>
+    <string name="a1_a3">A1 - A3</string>
+    <string name="b1_b3">B1 - B3</string>
+    <string name="c1_c3">C1 - C3</string>
+    <string name="d1_d3">D1 - D3</string>
+    <string name="e1_e3">E1 - E3</string>
     <string name="postal_address">Postal Address</string>
     <string name="pin_code">Pin Code</string>
     <string name="pan_number">PAN Number</string>
@@ -20,4 +38,6 @@
     <string name="bank_account_number">Bank Account Number</string>
     <string name="ifsc_code">IFSC Code</string>
     <string name="save">SAVE</string>
+    <string name="resale_market">RESALE MARKET</string>
+    <string name="market_depth">Market Depth</string>
 </resources>

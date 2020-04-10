@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgGray"
+    tools:context=".LandingFragment">
+
+    <com.vogella.android.vestate.CustomViewPager
+        android:id="@+id/bottom_nav_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.vogella.android.vestate.CustomViewPager>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemBackground="@color/bottom_nav_bgcolor"
+        app:itemIconTint="@color/bottom_nav_iconcolor"
+        app:itemIconSize="28dp"
+        app:menu="@menu/bottom_nav_menu"
+        />
+</FrameLayout>
