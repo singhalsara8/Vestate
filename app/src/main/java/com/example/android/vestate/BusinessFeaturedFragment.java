@@ -1,5 +1,4 @@
-package com.vogella.android.vestate;
-import android.graphics.Bitmap;
+package com.example.android.vestate;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;

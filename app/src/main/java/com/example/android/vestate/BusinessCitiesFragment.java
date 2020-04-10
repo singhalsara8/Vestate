@@ -1,5 +1,5 @@
 
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;

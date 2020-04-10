@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vogella.android.vestate">
+    package="com.example.android.vestate">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity" android:theme="@style/SplashTheme">
+        <activity android:name="com.example.android.vestate.SplashActivity" android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -17,7 +17,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.android.vestate.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

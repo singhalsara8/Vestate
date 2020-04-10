@@ -1,4 +1,4 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;

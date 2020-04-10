@@ -1,4 +1,4 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import android.graphics.drawable.Drawable;
 public class PropertyModel {
     public Drawable preview, fundedChart;

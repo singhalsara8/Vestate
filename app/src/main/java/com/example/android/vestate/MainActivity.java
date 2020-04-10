@@ -1,10 +1,9 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
-import androidx.navigation.NavHostController;
 import androidx.navigation.Navigation;
 import android.os.Bundle;
 import android.view.View;

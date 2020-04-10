@@ -1,12 +1,10 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
+
 import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

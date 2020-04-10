@@ -1,4 +1,4 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 public class CitiesFilterModel {
     public String city;
     public int type;

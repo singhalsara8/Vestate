@@ -1,4 +1,4 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;

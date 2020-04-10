@@ -7,11 +7,11 @@
     android:background="@color/bgGray"
     tools:context=".LandingFragment">
 
-    <com.vogella.android.vestate.CustomViewPager
+    <com.example.android.vestate.CustomViewPager
         android:id="@+id/bottom_nav_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </com.vogella.android.vestate.CustomViewPager>
+    </com.example.android.vestate.CustomViewPager>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav_view"

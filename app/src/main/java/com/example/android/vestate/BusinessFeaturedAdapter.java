@@ -1,4 +1,4 @@
-package com.vogella.android.vestate;
+package com.example.android.vestate;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
