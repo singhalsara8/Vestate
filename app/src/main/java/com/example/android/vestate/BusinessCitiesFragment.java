@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 public class BusinessCitiesFragment extends Fragment {
-    RecyclerView filterRecyclerview, propertyRecyclerview;
-    BusinessCitiesFilterAdapter filterAdapter;
-    BusinessFeaturedAdapter propertyAdapter;
-    List<CitiesFilterModel> cityList;
-    List<PropertyModel> propertyList;
+    private RecyclerView filterRecyclerview, propertyRecyclerview;
+    private BusinessCitiesFilterAdapter filterAdapter;
+    private BusinessFeaturedAdapter propertyAdapter;
+    private List<CitiesFilterModel> cityList;
+    private List<PropertyModel> propertyList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

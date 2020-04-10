@@ -40,4 +40,20 @@
     <string name="save">SAVE</string>
     <string name="resale_market">RESALE MARKET</string>
     <string name="market_depth">Market Depth</string>
+    <string name="bid">Bid</string>
+    <string name="orders">Orders</string>
+    <string name="qty">Qty</string>
+    <string name="offers">Offers</string>
+    <string name="open">Open</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="close">Close</string>
+    <string name="volume">Volume</string>
+    <string name="avg_trade_price">Avg.trade price</string>
+    <string name="last_traded_qty">Last traded qty</string>
+    <string name="last_traded_at">Last traded at</string>
+    <string name="lower_circuit">Lower circuit</string>
+    <string name="upper_circuit">Upper circuit</string>
+    <string name="buy">BUY</string>
+    <string name="sell">SELL</string>
 </resources>
