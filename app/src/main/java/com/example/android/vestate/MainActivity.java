@@ -12,13 +12,18 @@ import androidx.navigation.Navigation;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
     private NavController navController;
     private MaterialToolbar toolbar;
     private DrawerLayout drawerLayout;
+    private NavigationView navigationView;
+    private View header;
+    private LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +32,17 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.my_nav_host_fragment);
         toolbar = findViewById(R.id.toolbar);
         drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        header = navigationView.getHeaderView(0);
+        linearLayout=header.findViewById(R.id.nav_header);
         setSupportActionBar(toolbar);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                navController.navigate(R.id.editProfileFragment);
+                drawerLayout.closeDrawer(GravityCompat.START);
+            }
+        });
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
             @Override
             public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
