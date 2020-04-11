@@ -72,4 +72,6 @@
     <string name="pending_decisions">Pending Decisions</string>
     <string name="_7260_valley_view_ln_undefined_peoria_michigan_62191_united_states"><u>7260 Valley View Ln undefined Peoria, Michigan 62191 United States</u></string>
     <string name="sellout">Sellout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

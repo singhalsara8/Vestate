@@ -10,14 +10,10 @@ import android.view.ViewGroup;
 
 public class SignupFragment extends Fragment {
 
-    private MainActivity mainActivity;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        mainActivity = (MainActivity)getActivity();
-        mainActivity.getSupportActionBar().hide();;
         return inflater.inflate(R.layout.fragment_signup, container, false);
     }
 }
