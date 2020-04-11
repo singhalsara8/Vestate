@@ -1,13 +1,657 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".ProfileFragment">
 
-    <TextView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:src="@drawable/profilestat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.87"
+                        android:fontFamily="Martel Sans"
+                        android:text="@string/total_investment"
+                        android:textColor="#202020"
+                        android:textFontWeight="600"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="35dp"
+                        android:fontFamily="Martel Sans"
+                        android:text="&#x20b9;50,000"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.87"
+                        android:fontFamily="Martel Sans"
+                        android:text="@string/total_rental_income"
+                        android:textColor="#202020"
+                        android:textFontWeight="600"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="Martel Sans"
+                        android:text="&#x20b9;2,400(8%)"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/green_square" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="0.8"
+                    android:alpha="0.87"
+                    android:fontFamily="Martel Sans"
+                    android:text="@string/mumbai"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:alpha="0.6"
+                    android:fontFamily="Martel Sans"
+                    android:text="&#x20b9;22,000(10%)"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.87"
+                    android:fontFamily="Martel Sans"
+                    android:text="@string/rental_income"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textFontWeight="300"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:alpha="0.6"
+                    android:fontFamily="Martel Sans"
+                    android:text="&#x20b9;1000"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pink_sqaure" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="0.8"
+                    android:alpha="0.87"
+                    android:fontFamily="Martel Sans"
+                    android:text="@string/new_delhi"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:alpha="0.6"
+                    android:fontFamily="Martel Sans"
+                    android:text="&#x20b9;12,000(20%)"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.87"
+                    android:fontFamily="Martel Sans"
+                    android:text="@string/rental_income"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textFontWeight="300"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:alpha="0.6"
+                    android:fontFamily="Martel Sans"
+                    android:text="&#x20b9;800"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/blue_sqaure" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="0.8"
+                    android:alpha="0.87"
+                    android:fontFamily="Martel Sans"
+                    android:text="@string/bengaluru"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:alpha="0.6"
+                    android:fontFamily="Martel Sans"
+                    android:text="&#x20b9;28,000(40%)"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="18dp"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.87"
+                    android:fontFamily="Martel Sans"
+                    android:text="@string/rental_income"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textFontWeight="300"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:alpha="0.6"
+                    android:fontFamily="Martel Sans"
+                    android:text="&#x20b9;600"
+                    android:textAlignment="center"
+                    android:textColor="#202020"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:alpha="0.77"
+                android:fontFamily="Martel Sans"
+                android:text="@string/my_properties"
+                android:textColor="#202020"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_width="98dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/myproperty1"/>
+                
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    
+                    <ImageView
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="36dp"
+                        android:layout_height="4dp"
+                        android:src="@drawable/mypropertylinegreen"/>
+
+                    <TextView
+                        android:layout_marginEnd="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:alpha="0.87"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/_44_plot_no_crown_plaza_b_h_truck_terminal_vashi"/>
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_width="98dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/myproperty2"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="36dp"
+                        android:layout_height="4dp"
+                        android:src="@drawable/mypropertylineblue"/>
+
+                    <TextView
+                        android:layout_marginEnd="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:alpha="0.87"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/central_mall_bellandur_outer_ring_road"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:alpha="0.77"
+                android:fontFamily="Martel Sans"
+                android:text="@string/pending_orders"
+                android:textColor="#202020"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_marginBottom="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_width="98dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/pendingorderhome"/>
+
+                        <TextView
+                            android:layout_marginEnd="12dp"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="Martel Sans"
+                            android:textFontWeight="600"
+                            android:textSize="18sp"
+                            android:alpha="0.87"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/block_m_market_near_moti_mahal_greater_kailash_part"/>
+
+                    </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="18dp"
+                    android:alpha="0.2"
+                    android:background="#202020"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="@string/upfront_payment"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="300"
+                        android:textSize="16sp"
+                        android:alpha="0.67"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="&#x20b9;1 Lakh"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="300"
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="@string/property_funded"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="300"
+                        android:textSize="16sp"
+                        android:alpha="0.67"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:text="80%"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="300"
+                        android:textSize="16sp"
+                        android:alpha="0.8"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:alpha="0.77"
+            android:fontFamily="Martel Sans"
+            android:text="@string/pending_decisions"
+            android:textColor="#202020"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/_7260_valley_view_ln_undefined_peoria_michigan_62191_united_states"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="Martel Sans"
+            android:textSize="16sp"/>
+        <View
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:alpha="0.2"
+            android:background="#202020"/>
+        
+        <LinearLayout
+            android:layout_marginBottom="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.77"
+                android:textSize="16sp"
+                android:fontFamily="Martel Sans"
+                android:text="Price/Share"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.77"
+                android:textSize="16sp"
+                android:fontFamily="Martel Sans"
+                android:textStyle="bold"
+                android:text=":520&#x20b9;"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="21dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.77"
+                android:textSize="16sp"
+                android:fontFamily="Martel Sans"
+                android:text="@string/sellout"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="100dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox"
+                android:text="Yes"
+                android:padding="10dp"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox"
+                android:text="NO"
+                android:padding="10dp"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:alpha="0.2"
+            android:background="#202020"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

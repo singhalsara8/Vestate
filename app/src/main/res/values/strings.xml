@@ -56,4 +56,20 @@
     <string name="upper_circuit">Upper circuit</string>
     <string name="buy">BUY</string>
     <string name="sell">SELL</string>
+    <string name="total_investment">Total Investment</string>
+    <string name="total_rental_income">Total Rental Income</string>
+    <string name="mumbai">Mumbai</string>
+    <string name="rental_income">Rental Income</string>
+    <string name="new_delhi">New Delhi</string>
+    <string name="bengaluru">Bengaluru</string>
+    <string name="my_properties">My Properties</string>
+    <string name="_44_plot_no_crown_plaza_b_h_truck_terminal_vashi">44 , Plot No , Crown Plaza, B/h Truck Terminal, Vashi</string>
+    <string name="central_mall_bellandur_outer_ring_road">Central Mall,Bellandur,Outer Ring Road</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="block_m_market_near_moti_mahal_greater_kailash_part">Block M Market, Near Moti Mahal Greater Kailash Part</string>
+    <string name="upfront_payment">Upfront Payment</string>
+    <string name="property_funded">Property Funded</string>
+    <string name="pending_decisions">Pending Decisions</string>
+    <string name="_7260_valley_view_ln_undefined_peoria_michigan_62191_united_states"><u>7260 Valley View Ln undefined Peoria, Michigan 62191 United States</u></string>
+    <string name="sellout">Sellout</string>
 </resources>
