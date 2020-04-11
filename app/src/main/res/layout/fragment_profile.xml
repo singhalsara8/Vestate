@@ -350,10 +350,71 @@
                         android:alpha="0.87"
                         android:textColor="@color/colorPrimary"
                         android:text="@string/_44_plot_no_crown_plaza_b_h_truck_terminal_vashi"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Martel Sans"
+                        android:textSize="14sp"
+                        android:alpha="0.3"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Mumbai"/>
                     
                 </LinearLayout>
                 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_width="98dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/myproperty3"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="36dp"
+                        android:layout_height="4dp"
+                        android:src="@drawable/mypropertylinered"/>
+
+                    <TextView
+                        android:layout_marginEnd="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Martel Sans"
+                        android:textFontWeight="600"
+                        android:textSize="18sp"
+                        android:alpha="0.87"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/tera_properties_and_builders_saket"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Martel Sans"
+                        android:textSize="14sp"
+                        android:alpha="0.3"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="New Delhi"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_marginBottom="28dp"
@@ -390,6 +451,16 @@
                         android:alpha="0.87"
                         android:textColor="@color/colorPrimary"
                         android:text="@string/central_mall_bellandur_outer_ring_road"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="Martel Sans"
+                        android:textSize="14sp"
+                        android:alpha="0.3"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Bengaluru"/>
 
                 </LinearLayout>
 
