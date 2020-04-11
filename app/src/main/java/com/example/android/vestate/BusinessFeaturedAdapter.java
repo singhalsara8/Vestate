@@ -1,16 +1,26 @@
 package com.example.android.vestate;
+import android.app.Activity;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.android.vestate.R;
+
 import java.util.List;
 public class BusinessFeaturedAdapter extends RecyclerView.Adapter<BusinessFeaturedAdapter.BusinessFeaturedViewHolder> {
     List<PropertyModel> propertyList;
-    public BusinessFeaturedAdapter(List<PropertyModel> propertyList) {
+    NavController navController;
+    public BusinessFeaturedAdapter(Activity activity, List<PropertyModel> propertyList) {
         this.propertyList = propertyList;
+        navController = Navigation.findNavController(activity, R.id.my_nav_host_fragment);
     }
     @NonNull
     @Override
@@ -21,7 +31,7 @@ public class BusinessFeaturedAdapter extends RecyclerView.Adapter<BusinessFeatur
     }
     @Override
     public void onBindViewHolder(@NonNull BusinessFeaturedViewHolder holder, int position) {
-        PropertyModel property = propertyList.get(position);
+        final PropertyModel property = propertyList.get(position);
         holder.preview.setImageDrawable(property.getPreview());
         holder.fundedChart.setImageDrawable(property.getFundedChart());
         holder.category.setText(property.getCategory());
@@ -29,6 +39,14 @@ public class BusinessFeaturedAdapter extends RecyclerView.Adapter<BusinessFeatur
         holder.irr.setText(property.getIrr());
         holder.price.setText(property.getPrice());
         holder.rentalYield.setText(property.getRentalYield());
+        holder.propertyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putParcelable("property",property);
+                navController.navigate(R.id.action_landingFragment_to_propertyViewFragment,bundle);
+            }
+        });
     }
     @Override
     public int getItemCount() {
@@ -37,6 +55,7 @@ public class BusinessFeaturedAdapter extends RecyclerView.Adapter<BusinessFeatur
     class BusinessFeaturedViewHolder extends RecyclerView.ViewHolder {
         ImageView preview, fundedChart;
         TextView category, address, irr, price, rentalYield;
+        CardView propertyCard;
         public BusinessFeaturedViewHolder(@NonNull View itemView) {
             super(itemView);
             preview = itemView.findViewById(R.id.list_item_preview);
@@ -46,7 +65,7 @@ public class BusinessFeaturedAdapter extends RecyclerView.Adapter<BusinessFeatur
             irr = itemView.findViewById(R.id.list_item_irr);
             price = itemView.findViewById(R.id.list_item_price);
             rentalYield = itemView.findViewById(R.id.list_item_rentalYield);
+            propertyCard = itemView.findViewById(R.id.property_card);
         }
     }
 }
-

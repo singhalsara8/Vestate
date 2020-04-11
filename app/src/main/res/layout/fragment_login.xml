@@ -1,95 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".LoginFragment">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/loginlogo"
-        android:layout_width="match_parent"
-        android:layout_height="272.5dp"
-        android:scaleType="centerCrop"
-        android:adjustViewBounds="true"
-        android:src="@drawable/vector29"/>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginStart="60dp">
-        <com.google.android.material.textfield.TextInputEditText
+        <ImageView
+            android:id="@+id/loginlogo"
             android:layout_width="match_parent"
-            android:id="@+id/login_email_id"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:layout_marginTop="107.5dp"
-            android:inputType="textEmailAddress"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginStart="60dp"
-        app:passwordToggleEnabled="true">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/login_password"
+            android:layout_height="272dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/vector29" />
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/login_button"
-        android:layout_marginEnd="60dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="36dp"
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:text="@string/log_in"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        android:textAlignment="center"
-        android:background="@drawable/log_in_button"/>
-
-    <LinearLayout
-        android:layout_marginTop="30dp"
-        android:id="@+id/login_signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-    <TextView
-        android:layout_marginStart="90dp"
-        android:textSize="12sp"
-        android:textColor="#202020"
-        android:alpha="0.7"
-        android:layout_marginTop="50dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/don_t_have_an_account"/>
-
-        <TextView
-            android:layout_marginStart="3dp"
-            android:textSize="14sp"
-            android:textColor="@color/colorAccent"
-            android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="60dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"/>
-
-    </LinearLayout>
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="60dp"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/log_in_button"
+            android:padding="16dp"
+            android:text="@string/log_in"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:id="@+id/login_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="@string/don_t_have_an_account"
+                android:textColor="#202020"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_toEndOf="@id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

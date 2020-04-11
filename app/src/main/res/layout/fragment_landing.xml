@@ -19,7 +19,7 @@
         android:layout_height="64dp"
         android:layout_gravity="bottom"
         android:background="@color/white"
-        app:itemBackground="@color/white"
+        app:itemBackground="@drawable/bottom_nav_bgcolor"
         app:itemIconTint="@color/bottom_nav_iconcolor"
         app:itemIconSize="28dp"
         app:menu="@menu/bottom_nav_menu"

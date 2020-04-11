@@ -1,4 +1,3 @@
-
 package com.example.android.vestate;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
@@ -10,11 +9,11 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 public class BusinessCitiesFragment extends Fragment {
-    private RecyclerView filterRecyclerview, propertyRecyclerview;
-    private BusinessCitiesFilterAdapter filterAdapter;
-    private BusinessFeaturedAdapter propertyAdapter;
-    private List<CitiesFilterModel> cityList;
-    private List<PropertyModel> propertyList;
+    RecyclerView filterRecyclerview, propertyRecyclerview;
+    BusinessCitiesFilterAdapter filterAdapter;
+    BusinessFeaturedAdapter propertyAdapter;
+    List<CitiesFilterModel> cityList;
+    List<PropertyModel> propertyList;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,22 +30,22 @@ public class BusinessCitiesFragment extends Fragment {
         filterRecyclerview.setAdapter(filterAdapter);
         propertyRecyclerview = view.findViewById(R.id.cities_property_recyclerview);
         propertyList = new ArrayList<>();
-        propertyAdapter = new BusinessFeaturedAdapter(propertyList);
+        propertyAdapter = new BusinessFeaturedAdapter(getActivity(),propertyList);
         PropertyModel propertyModel1 = new PropertyModel(
                 getResources().getDrawable(R.drawable.property1),
                 getResources().getDrawable(R.drawable.perc1),
-                "A1","78 /a, Maker Arcade, G.d.somani Marg, Nr Wtc., Cuffe Parade,Mumbai",
-                ": 17%",": 520₹",": 6%");
+                "A1","78 /a, Maker Arcade, G.d.somani Marg, Nr Wtc., Cuffe Parade, Mumbai",
+                ": 17%",": 520₹",": 6%", "Mumbai");
         PropertyModel propertyModel2 = new PropertyModel(
                 getResources().getDrawable(R.drawable.property4),
                 getResources().getDrawable(R.drawable.perc2),
-                "B1","44 , Plot No , Crown Plaza, B/h Truck Terminal, Vashi,Mumbai",
-                ": 16% ",": 620₹",": 9%");
+                "B1","44 , Plot No , Crown Plaza, B/h Truck Terminal, Vashi, Mumbai",
+                ": 16% ",": 620₹",": 9%", "Mumbai");
         PropertyModel propertyModel3 = new PropertyModel(
                 getResources().getDrawable(R.drawable.property5),
                 getResources().getDrawable(R.drawable.perc3),
                 "B2","Plot No D77/1, T T C Indl Area Midc, Vashi, Navi Mumbai",
-                ": 18%",": 740₹",": 8%");
+                ": 18%",": 740₹",": 8%", "Navi Mumbai");
         propertyList.add(propertyModel1);
         propertyList.add(propertyModel2);
         propertyList.add(propertyModel3);

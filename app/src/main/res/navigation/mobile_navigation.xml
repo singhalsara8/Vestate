@@ -27,12 +27,30 @@
         android:name="com.example.android.vestate.LandingFragment"
         android:label="fragment_landing"
         tools:layout="@layout/fragment_landing">
+        <action
+            android:id="@+id/action_landingFragment_to_propertyViewFragment"
+            app:destination="@id/propertyViewFragment"/>
     </fragment>
     <fragment
         android:id="@+id/editProfileFragment"
         android:name="com.example.android.vestate.EditProfileFragment"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/propertyViewFragment"
+        android:name="com.example.android.vestate.PropertyViewFragment"
+        android:label="fragment_property_view"
+        tools:layout="@layout/fragment_property_view" >
+        <action
+            android:id="@+id/action_propertyViewFragment_to_propertyCheckoutFragment"
+            app:destination="@id/propertyCheckoutFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/propertyCheckoutFragment"
+        android:name="com.example.android.vestate.PropertyCheckoutFragment"
+        android:label="fragment_property_checkout"
+        tools:layout="@layout/fragment_property_checkout">
+    </fragment>
     <fragment
         android:id="@+id/statsFragment"
         android:name="com.example.android.vestate.StatsFragment"

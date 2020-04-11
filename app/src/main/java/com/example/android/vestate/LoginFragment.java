@@ -11,10 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 public class LoginFragment extends Fragment {
     View view;
-    private LinearLayout linearLayout;
+    private RelativeLayout linearLayout;
     private NavController navController;
     private Button loginButton;
 

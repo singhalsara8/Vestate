@@ -6,4 +6,5 @@
     <color name="white">#FFFFFF</color>
     <color name="bgGray">#06202020</color>
     <color name="textColor">#202020</color>
+    <color name="colorAccentLight">#EDFFEA</color>
 </resources>
